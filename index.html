@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOMADE DIGITAL</title>
+    <link rel="stylesheet" href="assets/css/estilos.css" type="text/css">
+    <!-- Iconos boxicons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--tipografia-->
+    <link href="//fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <main class="contenedor_maestro">
+        <header class="portada">
+
+            <div class="rrss">
+                <span>Contacto</span>
+                     <ul>
+                         <li> 
+                             <a href="#">
+                                <i class='bx bxl-instagram icono' ></i>
+                             </a>   
+                            </li>
+                         <li>
+                             <a href="#">
+                                <i class='bx bxl-whatsapp icono'></i>
+                             </a>
+         
+                            </li>                
+                         <li>
+                             <a href="#">
+                                <i class='bx bxl-github icono' ></i>
+                             </a>
+         
+                        </li>                
+                                     
+                                 
+         
+                     </ul>     
+            </div>
+        
+            <div>
+
+        <section class="grid">
+
+            <h1>NOMADE DIGITAL</h1>
+            <p>DISOÑADOR WEB</p>
+
+        </section>
+            </div>
+
+            <a href="#cotizar">
+                Cotizar Web
+                <i class='bx bx-chevron-down vermas'></i>
+            </a>    
+        </header>
+
+        <section class="contacto" id="cotizar">
+            <div>
+             
+                <h2><i class='bx bx-world' ></i>COTIZAR WEB</h2>
+                <p>Recuerda que mientras mas especifico seas en tu explicacion, el presupuesto tendra un costo mas acotado a tus necesidades y te lo podre enviar mas rapido.</p>
+            
+                <!--action es para decir donde se va la informacion del formulario y el method es para decir como enviar la info (post / get)-->
+            </div>
+
+            <form class="formulario" action="enviar.php"
+    method="POST">
+
+    
+
+    <div>
+
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text" name="nombre" placeholder="Ingresa tu nombre" required>
+
+    </div>
+
+    <div>
+        <label for="Telefono">Whatsapp</label>
+        <input type="tel" name= "Telefono" placeholder= "Tu wsp con codigo de area" required>
+    </div>
+
+    <div>
+        <label for="Email">Email</label>
+        <input id="Email" type="mail" name="email" placeholder="Tu correo electronico" required>
+    </div>
+
+    <div>
+        <label for="selecciona">Selecciona el tipo de web</label>
+
+        <select name="tipoweb" id="selecciona">
+            <option value="onepage" selected>Onepage</option>
+            <option value="corporativa" selected>Corporativa</option>
+            <option value="ecommerce" selected>e-Commerce</option>
+            <option value="elearning" selected>e-Learning</option>
+            <option value="otro" selected>Otro</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="mensaje">Mensaje</label>
+        <textarea name="mensaje" id="mensaje" placeholder="Hablame sobre las secciones de tu pagina"></textarea>
+    </div>
+
+    <div>
+        <label for="boceto">Sube un boceto de tu idea</label>
+        <input type="file" name="boceto">
+    </div>
+
+    <input type="submit" value="Cotizar">
+</form>
+        </section>
+    </main>
+
+    
+    
+</body>
+</html>
